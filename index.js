@@ -20,12 +20,18 @@ totTime = parseInt(x.value);
 handle = setInterval(timer,1000);
 document.getElementById('start').disabled=true;
 }
+function beep() {
+    var snd = new Audio(o=(A=new AudioContext()).createOscillator());
+    o.connect(A.destination);o.start(0);setTimeout('o.stop(0)',500);  
+    snd.play();
+}
 function timer()
 {
 formatTime(totTime);
 
 if(totTime<=0){
 reset();
+beep();
 }
 else{
 totTime--;
