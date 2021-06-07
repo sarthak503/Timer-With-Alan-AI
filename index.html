@@ -13,24 +13,29 @@
 <body>
     
     <h1 id="heading">Timer </h1>
-    <input class="input" type="number" placeholder="Seconds" id ="input-field">
+    <label for="time" class="time" >Enter the time : </label>   
+    <input class="input" type="number" placeholder="Type Seconds" id ="input-field">
+    
+ 
+    <br>
     <div class="maincontainer">
         <div class="countcontainer">
-            <div class="count" id="hours">14</div>
+            <div class="count" id="hours">00</div>
             <p class="counttxt">Hours</p>
         </div>
         <div class="countcontainer">
-            <div class="count" id="minutes">45</div>
+            <div class="count" id="minutes">00</div>
             <p class="counttxt">Minutes</p>
         </div>
         <div class="countcontainer">
-            <div class="count" id="seconds">34</div>
+            <div class="count" id="seconds">00</div>
             <p class="counttxt">Seconds</p>
         </div>
     </div>
     <div>
-        <button class="button" type="button" id ="start" onclick="startTimer()" >Start</button>
+        <button class="button" type="button" id ="start" onclick="isnan()" >Start</button>
         <button class="button" type="button" id="reset" onclick="reset()">Reset</button>
+        <p id="demo"></p>
     </div>
     <footer>
         <p class="footer">Made with <span>&#10084;</span> / Sarthak Kumar</p>

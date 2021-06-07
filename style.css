@@ -33,6 +33,7 @@ justify-content: center;
     width: 120px;
     margin: 20px;;
 }
+
 .count{
     background-color: #343650;
     color: #fb6087;
@@ -40,7 +41,11 @@ justify-content: center;
     height: 100px;
     font-size: 70px;
     border-radius:8px ;
-
+}
+.time{
+    background-color: #211A29;
+    color: #fb6087;
+    font-size: 25px;
 
 }
 .counttxt{
@@ -67,6 +72,9 @@ justify-content: center;
 cursor: pointer;
 background-color:whitesmoke;
 
+}
+#demo{
+    color: aliceblue;   
 }
 span{
     color:#e71a18;
