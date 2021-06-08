@@ -10,7 +10,7 @@ function isnan()
     x=document.getElementById("input-field").value;
     
     if(x==''){
-        er="Input Invalid";
+        er="Input field empty";
                      
     }
     else{
@@ -53,9 +53,14 @@ function beep() {
 function timer()
 {
 formatTime(totTime);
-if(totTime<=0){
+if(totTime===0){
 reset();
 beep();
+}
+else if(totTime<0){
+    alert("Negative Input");
+    
+    reset();
 }
 else{
 totTime--;
@@ -67,7 +72,16 @@ function formatTime(second)
     second = second%3600;
     const mm = parseInt(second/60);
     second = second % 60;
+    if(hh<10)
+    hours.innerText = "0"+hh;
+    else
     hours.innerText = hh;
+    if(mm<10)
+    minutes.innerText = "0"+mm;
+    else
     minutes.innerText = mm;
+    if(second<10)
+    seconds.innerText = "0"+second;
+    else
     seconds.innerText = second;
 }
