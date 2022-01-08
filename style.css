@@ -1,89 +1,100 @@
-body{
-    background-color: #211A29;
-    text-align:center;
-    font-family: 'Red Hat Text', sans-serif;
+body {
+  background-color: #211a29;
+  text-align: center;
+  font-family: "Red Hat Text", sans-serif;
 }
-#heading{
-    color:yellow;
-    background-color:brown; 
-    margin-top: 50px;
+#heading {
+  color: yellow;
+  background-color: brown;
+  margin-top: 2%;
 
-    text-transform: uppercase;
-    letter-spacing: 10px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
-.input{
-    padding: 10px;
-    border-radius: 5px; 
-    width: 250px;   
-    margin:
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  margin: 2%;
 }
-.input:focus{
-outline: none;
+.input:focus {
+  outline: none;
 }
-.input::placeholder{
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.input::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.maincontainer {
+  display: flex;
+  justify-content: center;
+}
+.countcontainer {
+  width: 5rem;
+  margin: 2rem;
+}
 
+.count {
+  background-color: #343650;
+  color: #fb6087;
+  width: 110px;
+  height: 100px;
+  font-size: 70px;
+  border-radius: 8px;
 }
-.maincontainer{
-display: flex;
-justify-content: center;
+.time {
+  background-color: #211a29;
+  color: #fb6087;
+  font-size: 25px;
 }
-.countcontainer{
-    width: 120px;
-    margin: 20px;;
+.counttxt {
+  color: #8486a9;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
+.button {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 2px solid #8486a9;
+  color: #a25d7d;
+  height: 50px;
+  width: 200px;
+  margin: 20px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+#demo {
+  color: aliceblue;
+}
+span {
+  color: #e71a18;
+}
+.footer {
+  color: snow;
+  text-align: center;
+  font-size: 15px;
 
-.count{
-    background-color: #343650;
-    color: #fb6087;
-    width: 110px;
-    height: 100px;
-    font-size: 70px;
-    border-radius:8px ;
+  margin-top: 200px;
 }
-.time{
-    background-color: #211A29;
-    color: #fb6087;
-    font-size: 25px;
-
-}
-.counttxt{
-    color:#8486a9;
-    text-transform:uppercase ;
-    letter-spacing: 3px;
-}
-.button{
-    font-size: 16px;
-    padding: 10px;
-    border:none;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border-radius: 6px;
-    background-color: transparent;
-    border:2px solid #8486a9;
-    color:#a25d7d;
-    height: 50px;
-    width: 200px;
-    margin: 20px;
-}
-.button:hover{
-cursor: pointer;
-background-color:whitesmoke;
-
-}
-#demo{
-    color: aliceblue;   
-}
-span{
-    color:#e71a18;
-}
-.footer{
-    color:snow;
-    text-align: center;
-    font-size:15px; 
-   
-    margin-top: 200px;
-    
+@media only screen and (max-width: 600px) {
+  .countcontainer {
+    width: 5rem;
+    margin: 0.5rem;
+  }
+  .count {
+    width: 5rem;
+    height: 3.5rem;
+    font-size: 2.5rem;
+    border-radius: 8px;
+  }
+  .counttxt {
+    letter-spacing: 1px;
+  }
 }
